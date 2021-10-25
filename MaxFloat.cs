@@ -2,9 +2,10 @@
 
 namespace GenericsTestProblems
 {
-    class MaxInteger
+    class MaxFloat
     {
-        public static int MaximumIntegerNumber(int firstValue, int secondValue, int thirdValue)
+
+        public static double MaximumFloatNumber(double firstValue, double secondValue, double thirdValue)
         {
             if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0 ||
                firstValue.CompareTo(secondValue) >= 0 && firstValue.CompareTo(thirdValue) > 0 ||
@@ -34,16 +35,16 @@ namespace GenericsTestProblems
         public static void Main(string[] args)
         {
             Console.WriteLine("Enter First Number");
-            int a = Convert.ToInt32(Console.ReadLine());
+            double a = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("Enter Second Number");
-            int b = Convert.ToInt32(Console.ReadLine());
+            double b = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("Enter Third Number");
-            int c = Convert.ToInt32(Console.ReadLine());
+            double c = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("\nMaximum Of 3 Integer");
-            int output = MaxInteger.MaximumIntegerNumber(a, b, c);
+            double output = MaxFloat.MaximumFloatNumber(a, b, c);
             Console.WriteLine(output);
 
         }
