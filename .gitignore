@@ -1,0 +1,7 @@
+./
+../
+.vs/
+GenericsTestProblems/
+bin/
+obj/
+bin/Debug/
